@@ -13,7 +13,7 @@
   --color-chrome: #c0c0c0;
   --color-chrome-bright: #e0e0e0;
   --color-text: #d4d4d4;
-  --color-text-muted: #888888;
+  --color-text-muted: #999999;
   --color-white: #f5f5f5;
 
   --font-display: Georgia, 'Times New Roman', serif;
@@ -40,7 +40,8 @@ body {
   font-family: var(--font-body);
   background: var(--color-bg-deep);
   color: var(--color-text);
-  line-height: 1.7;
+  line-height: 1.8;
+  font-size: 1.125rem;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -100,12 +101,13 @@ ul { list-style: none; }
 }
 
 #nav-menu a {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: var(--color-chrome-bright);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: color var(--transition-fast);
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  padding: 0.5rem 0;
 }
 
 #nav-menu a:hover { color: var(--color-white); }
@@ -205,8 +207,8 @@ ul { list-style: none; }
   display: inline-block;
   background: var(--color-cherry);
   color: var(--color-white);
-  padding: 0.875rem 2.5rem;
-  font-size: 0.875rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   border: 1px solid transparent;
@@ -252,13 +254,14 @@ section h2::after {
 
 .story-text p {
   margin-bottom: var(--space-sm);
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
+  line-height: 1.85;
 }
 
 .story-lead {
-  font-size: 1.25rem !important;
+  font-size: 1.3125rem !important;
   color: var(--color-chrome-bright);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .story-image img {
@@ -304,19 +307,20 @@ section h2::after {
 
 .spec-group dt,
 .spec-group dd {
-  padding: 0.625rem 0;
+  padding: 0.75rem 0;
   border-bottom: 1px dotted rgba(192, 192, 192, 0.15);
 }
 
 .spec-group dt {
   color: var(--color-text-muted);
-  font-size: 0.9375rem;
+  font-size: 1.0625rem;
 }
 
 .spec-group dd {
   color: var(--color-chrome-bright);
-  font-size: 0.9375rem;
+  font-size: 1.0625rem;
   text-align: right;
+  font-weight: 500;
 }
 
 /* ---- GALLERY ---- */
@@ -395,7 +399,7 @@ section h2::after {
 
 .award-card p {
   color: var(--color-text-muted);
-  font-size: 0.9375rem;
+  font-size: 1.0625rem;
 }
 
 /* ---- INQUIRE ---- */
@@ -417,20 +421,20 @@ section h2::after {
 
 .inquire-text {
   color: var(--color-text-muted);
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   margin-bottom: var(--space-md);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .inquire-phone {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   color: var(--color-chrome-bright);
   background: var(--color-bg-card);
   border: 1px solid rgba(192, 192, 192, 0.2);
-  padding: 1rem 2rem;
+  padding: 1.25rem 2.5rem;
   border-radius: 2px;
   transition: border-color var(--transition-fast), background var(--transition-fast);
 }
@@ -445,7 +449,8 @@ section h2::after {
 .inquire-note {
   margin-top: var(--space-sm);
   color: var(--color-text-muted);
-  font-size: 0.875rem;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 /* ---- LIGHTBOX ---- */
